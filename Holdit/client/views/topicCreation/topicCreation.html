@@ -1,0 +1,59 @@
+<!-- Topic creation -->
+<template name="topicCreation">
+  <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-2 left_button" id="cancel_new_topic">
+          </div>
+          <div class="col-xs-8 title_box">
+            <h2 class="title">New Topic</h2>
+          </div>
+          <div class="col-xs-2 right_button" id="new_topic">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="topic_creation_form">
+   {{> topicCreationForm}}
+  </div>
+</template>
+
+<template name="topicCreationForm">
+  <form class="form-search">
+    <div class="container">
+      <div class="row">
+        <br/>
+        <div class="col-xs-12">
+          <input class="form-control" type="text" id="topic_name" placeholder="Title (max 14 char)" maxlength="14">
+        </div>
+      </div>
+      <br/>
+      <div class="row">
+        <div class="col-xs-12">
+          <textarea rows="3" placeholder="Description"
+          id="topic_description" class="form-control"></textarea>
+        </div>
+      </div>
+      <br/>
+      <br/>
+      <div class="row">
+        <div class="col-xs-12">
+          <label class="control-label" id="shared_with">Shared with: </label>
+          <br/>
+        </div>
+      </div>
+      <br/>
+      <div class="row">
+        <div class="col-xs-6 enabled" id="private_icon">
+        </div>
+        <div class="col-xs-6 disabled" id="public_icon">
+        </div>
+      </div>
+    </div>
+    <!-- champ cache html style display:none, son id icon_type, .html , div -->
+    <div id="topic_type" style="display:none">private</div>
+  </form>
+</template>

@@ -1,0 +1,52 @@
+/*Topic creation*/
+
+#cancel_new_topic{
+  height:44px;
+  background-image: url('images/left_chevron_white.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#new_topic{
+  height:44px;
+  background-image: url('images/check_white.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#topic_creation_form{
+  position: relative;
+  top: 60px;
+}
+
+#private_icon{
+  background-repeat: no-repeat;
+  background-position: center;
+  height:76px;
+}
+#private_icon.enabled{
+  background-image: url('images/lock_blue_1.png');
+}
+#private_icon.disabled{
+  background-image: url('images/lock_grey_1.png');
+}
+
+
+#public_icon{
+  margin-top:11px;
+  background-repeat: no-repeat;
+  background-position: center;
+  height:65px;
+}
+#public_icon.enabled{
+  background-image: url('images/group_blue_1.png');
+}
+#public_icon.disabled{
+  background-image: url('images/group_grey_1.png');
+}
+
+#shared_with{
+  font-size: 18pt;
+  font-weight: 100;
+  color:$primary-color;
+}

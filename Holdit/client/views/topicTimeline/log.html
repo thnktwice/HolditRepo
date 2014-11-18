@@ -1,0 +1,149 @@
+<template name="log">
+  <div class="log">
+    {{#if this.isMessage}}
+      {{> message}}
+    {{/if}}
+    {{#if this.isCount}}
+      {{> count}}
+    {{/if}}    
+    {{#if this.isAdminMessage}}
+      {{> adminMessage}}
+    {{/if}}    
+    {{#if this.isAdminImage}}
+      {{> adminImage}}
+    {{/if}}  
+  </div>
+</template>
+
+<template name="count">
+  {{#if isMine}}
+  <div class="count mine">
+    <div class="row"> 
+      <div class="col-xs-12 count_formatted_time mine">
+        {{{formatted_time}}}
+      </div>
+    </div>
+    <div class="row"> 
+      <div class="col-xs-12 mine">
+        <span class="score_log">{{this.timedScore}}</span>
+        <span class="name_log">&nbsp;by me</span>
+      </div>
+    </div>
+  </div>
+  {{else}}
+  <div class="count">
+    <div class="row"> 
+      <div class="col-xs-12 count_formatted_time">
+        {{{formatted_time}}}
+      </div>
+    </div>
+    <div class="row"> 
+      <div class="col-xs-12">
+        <span class="name_log">{{this.uname_log}}:&nbsp;</span>
+        <span class="score_log">{{this.timedScore}}</span>
+      </div>
+    </div>
+  </div>
+  {{/if}}
+</template>
+
+<template name="message">
+  {{#if isMine}}
+    <div class="row"> 
+      <div class="col-xs-12 formatted_time mine">
+        {{{formatted_time}}}
+      </div>
+    </div>
+    <div class="row"> 
+      <div class="col-xs-11 col-xs-offset-1">
+        <div class="message">
+          <div class="row"> 
+            <div class="col-xs-12 uname mine">
+              ({{this.timedScore}})  Me
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 content mine">
+              {{content}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  {{else}}
+    <div class="row"> 
+      <div class="col-xs-12 formatted_time">
+        {{{formatted_time}}}
+      </div>
+    </div>
+    <div class="row"> 
+      <div class="col-xs-11">
+        <div class="message">
+          <div class="row"> 
+            <div class="col-xs-12 uname">
+              {{this.uname_log}}  ({{this.timedScore}})
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 content">
+              {{content}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  {{/if}}
+
+
+</template>
+
+<template name="adminMessage">
+  <div class="row"> 
+    <div class="col-xs-12 formatted_time">
+      {{{formatted_time}}}
+    </div>
+  </div>
+  <div class="row"> 
+    <div class="col-xs-11">
+      <div class="adminMessage">
+        <div class="row"> 
+          <div class="col-xs-12 admin_uname">
+            <span>Chillbot</span>
+            <span class="chillbot"></span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 admin_content">
+          {{content}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<template name="adminImage">
+  <div class="row"> 
+    <div class="col-xs-12 formatted_time">
+      {{{formatted_time}}}
+    </div>
+  </div>
+  <div class="row"> 
+    <div class="col-xs-11">
+      <div class="adminMessage">
+        <div class="row"> 
+          <div class="col-xs-12 admin_uname">
+            <span>Chillbot</span>
+            <span class="chillbot"></span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 admin_content">
+          <img class="adminImage" src={{content}}>
+          <br/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

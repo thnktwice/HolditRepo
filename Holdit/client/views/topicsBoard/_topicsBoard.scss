@@ -1,0 +1,25 @@
+/*Topics Board*/
+.topicsBoard {
+  position: relative;
+  top: 60px;
+  padding-bottom:150px;
+}
+
+#add_topic{
+  background-image: url('images/plus_white.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  height:44px;
+}
+
+#mine{
+  font-size:15px;
+  color :white;
+  padding-top:2px;
+}
+
+#all {
+  font-size:15px;
+  color :white;
+  padding-top: 2px;
+}

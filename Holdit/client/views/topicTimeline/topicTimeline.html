@@ -1,0 +1,79 @@
+<!-- Timeline -->
+<template name="topicTimeline">
+  <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-2 left_button" id="back">
+          </div>
+          <div class="col-xs-8 title_box">
+            <h2 class="title">{{name}}</h2>
+          </div>
+          <div class="col-xs-2 right_button" id="go_stats">
+            <span class="glyphicon glyphicon-stats"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="scoreboard">
+
+    <div class="row">
+      <div class="col-xs-3">
+        <p id="my_score">{{my_score}}</p>
+      </div>
+      <div class="col-xs-6 plus">
+        <h1 id="total_score">{{score}}</h1>
+      </div>
+      <div class="col-xs-3">
+        <div class="link_icon_{{selected}}"></div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12">
+        <h4 id="description"><i>{{description}}</i></h4>
+      </div>
+    </div>
+    <div class="row">
+      <hr/>
+    </div>
+  
+
+    <form class="form-search">
+      <div class="row">
+        <div class="col-xs-12">
+        <form>
+          <div class="input-group">
+            <input type="text" class="form-control" id="message_content" placeholder="Feelings about these logs ?">
+            <span class="input-group-btn">
+              <button class="btn btn-warning" type="submit" id="new_message">Post</button>
+            </span>
+          </div>
+          </form>
+        </div>
+      </div>
+    </form>
+
+    <br/>
+    <div class="row">
+      <div class="col-xs-12">
+        {{#each daily_logs}}
+          {{>daily_log}}
+        {{/each}}
+      </div>
+    </div>
+  </div>
+  <br/>
+</template>
+
+<template name="daily_log">
+<p class='daily_report'>
+   {{{dayCount}}} <br/> {{{goalMessage}}}
+</p>
+<hr/>
+  {{#each logs}}
+    {{> log}}
+  {{/each}}  
+</template>

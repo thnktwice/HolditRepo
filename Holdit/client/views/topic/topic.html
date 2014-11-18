@@ -1,0 +1,45 @@
+<template name="topic">
+  <div class="topic {{selected}}">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-3 plus score">
+          {{score}}
+        </div>
+        <div class="col-xs-7 name">
+          {{name}}
+            <div class="creator">
+              by <span class="creator_name">{{creator_name}}</span>
+              {{{delete}}}
+            </div>
+          <div class="row">
+            <div class="col-xs-3 {{type}}_small_icon">
+            </div>
+            <div class="col-xs-2">
+              {{#if beanIsConnected}}
+              <div class="link_icon {{selected}}">
+              </div>
+              {{/if}}
+            </div>
+            <div class="col-xs-1">
+            </div>
+            {{#if $.Session.equals 'topic_view' 'all'}}
+              <div class="col-xs-2 add_to_my_topics">
+                Select
+              </div>
+            {{/if}}
+            {{#if $.Session.equals 'topic_view' 'mine'}}
+              <div class="col-xs-2 remove_from_my_topics">
+                Remove
+              </div>
+            {{/if}}
+          </div>
+        </div>
+        <div class="col-xs-1">
+          <div class="go">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

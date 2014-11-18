@@ -1,0 +1,9 @@
+<template name="login">
+  <p><i>Ready,steady....</i></p>
+  <div id="login">
+    {{> loginButtons}}
+  </div>
+  {{#if currentUser}}
+    {{goHome}}
+  {{/if}}
+</template>

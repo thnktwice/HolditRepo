@@ -1,0 +1,179 @@
+/*Timeline*/
+#scoreboard{
+  position: relative;
+  top: 70px;
+}
+
+#back{
+  background-image: url('images/left_chevron_white.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  height:44px;
+}
+
+#my_score {
+  color: $primary-color;
+  font-size: 20pt;
+  line-height: 60px;
+  background-image: url('images/my_count.png');
+  background-repeat: no-repeat;
+  height:90px;
+  width:62px;
+}
+
+.link_icon_selected {
+  background-image: url('images/link_icon_blue.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  height:18px;
+  width:35px;
+  margin-top: 13px;
+}
+
+#description{
+  color:$primary-color;
+}
+
+#total_score {
+  display:inline-block;
+  height:133px;
+  width:133px;
+  background-image: url('images/circle_orange_large.png');
+  background-repeat: no-repeat;
+  text-align:center;
+  line-height: 133px;
+  color:white;
+  font-size: 50pt;
+  font-weight:150;
+
+}
+.daily_score {
+  color:$secondary-color;
+  font-size: 12pt;
+  font-weight:500;
+}
+.daily_report {
+  color:$primary-color;
+}
+.goal_success {
+  background-color: #C2E0C2;
+  color: white;
+  border-radius: 4px;
+  padding: 2px;
+}
+
+.goal_failure {
+  background-color: #E69980;
+  color: white;
+  border-radius: 4px;
+  padding: 2px;
+}
+
+.log{
+  color:$primary-color;
+  text-align: left;
+}
+
+.mine{
+  text-align:right;   
+}
+
+
+.formatted_time{
+  color:grey;
+  font-size: 8pt;
+}
+
+.count_formatted_time {
+  color:grey;
+  font-size: 8pt;
+  margin-bottom: -8px;
+  z-index: 50;
+}
+
+.count.mine{
+  border-width: 0px 2px 0px 0px;
+  padding-right: 5px;
+}
+
+.count{
+  border-style: solid;
+  border-width: 0px 0px 0px 2px;
+  border-color: $secondary-color;
+  padding-left: 5px;
+  margin-bottom: 8px;
+}
+
+
+
+.score_log{
+  color:$secondary-color;
+  font-size: 15pt;
+  font-weight: bold;
+}
+.name_log{
+  font-size:11pt;
+  color:$primary-color;
+}
+
+.delete {
+  //This is to expand the hit zone artifically
+  padding:12px;
+  margin:-12px;
+}
+.message{
+ /*       border-style: solid;
+        border-width: 1px 1px 1px 1px;
+        border-color: $primary-color;*/
+        border-radius:10px;
+        padding:2px 5px;
+        background-color: rgba(255,153,51,0.1);
+        margin-bottom: 8px;
+        font-size:11pt;
+      }
+
+
+      .message .uname{
+        font-weight:normal;
+        font-size: 13pt;    
+      }
+
+
+
+      .adminMessage{
+  /*      border-style: solid;
+        border-width: 1px 1px 1px 1px;
+        border-color: $secondary-color;*/
+        border-radius:10px;
+        background-color: rgba(0,153,204,0.05);
+        margin-bottom: 8px;
+        padding:2px 5px;
+        padding-bottom:5px;
+        color:$secondary-color;
+        font-size:11pt;
+      }
+      .adminMessage .admin_uname{
+        font-weight:normal;
+        font-size: 13pt;
+      }
+
+      .adminImage {
+        width:100%;
+      }
+
+      .chillbot{
+        background-image: url('images/chillbot.png');
+        background-size: 14px 21px;
+        float:right;
+        width:14px;
+        height:21px;
+
+      }
+
+
+      #footer {
+        width:100%;
+        height:80px;
+        position:absolute;
+        bottom:0;
+      }

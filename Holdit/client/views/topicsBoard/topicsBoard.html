@@ -1,0 +1,40 @@
+<template name="topicsBoard">
+  <!-- navigation bar -->
+  <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-2 left_button" id="add_topic">
+            </div>
+            <div class="col-xs-4 title_box">
+                <h2 class="title">Chillcount</h2>
+            </div> 
+            <div class="col-xs-2">
+            </div>
+            <div class="col-xs-2 title {{$.Session.equals 'topic_view' 'mine'}}" id="mine">
+            Mine
+            </div>            
+            <div class="col-xs-2 title {{$.Session.equals 'topic_view' 'all'}}" id="all">
+            All
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <div class="topicsBoard">
+    {{debug}}
+    {{loggedInSoRegisterForNotif}}
+    {{#each topics}}
+      {{> topic}}
+    {{/each}}
+    
+      <!-- <input type="text" class="span2 search-query"/> -->
+    <div id="footer">  
+      <hr/>
+      <p><i>Thanks for joining Superchill !</i></p>
+      {{> loginButtons}}
+      <br/><br/>
+    </div>
+  </div>
+</template>

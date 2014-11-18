@@ -1,0 +1,14 @@
+<template name="layout">
+{{> yield}}
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<p>
+  <i>
+    <div id="bluetooth_status">
+      {{$.Session.get 'logmessage'}}
+    </div>
+    <div id="bluetooth_reconnect">
+    <a>Reset connection with ChillButton >></a>
+    </div>
+  </i>
+</p>
+</template>

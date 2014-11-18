@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>ABEC27D4-83BC-4720-9F65-DD4CE2103179</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ChillCount</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>967414BFB5A7ABE9ABDC98C2EB5EA5C4C49492F4</key>
+		<string>github.com:thnktwice/ChillCountRepo.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Builds/0.2.2/testpush/ios/project/ChillCount.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>967414BFB5A7ABE9ABDC98C2EB5EA5C4C49492F4</key>
+		<string>../../../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:thnktwice/ChillCountRepo.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>967414BFB5A7ABE9ABDC98C2EB5EA5C4C49492F4</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>967414BFB5A7ABE9ABDC98C2EB5EA5C4C49492F4</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ChillCountRepo</string>
+		</dict>
+	</array>
+</dict>
+</plist>

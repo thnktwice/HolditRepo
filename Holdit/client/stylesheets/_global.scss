@@ -1,0 +1,29 @@
+/* global CSS declarations go here */
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 200;
+    text-align: center;
+    padding-bottom:50px;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    // background-color: rgba(255,255,51,0.4);
+}
+
+.outer {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.btn:focus {
+  outline: none;
+}
+.right_button {
+  padding-top: 5px;
+  font-size: 25px;
+}
+
+$primary-color:#0099cc;
+$secondary-color:#ff9933;
