@@ -1,5 +1,11 @@
 Router.configure({
-  // waitOn: function(){
-  //   return Meteor.subscribe('topics'); 
-  // }
+  //Iron router configuration such as
+  layoutTemplate: 'layout',
+  onBeforeAction: function () {
+    if (! Meteor.userId()) {
+      this.render('login');
+    } else {
+      this.next();
+    }
+  }
 });

@@ -38,8 +38,8 @@ if (Meteor.isCordova) {
           successHandler,
           pushErrorHandler,
           {
-            "senderID":"808404171645",
-            "ecb":"onNotificationG"
+              "senderID":"808404171645",
+              "ecb":"onNotificationG"
           });        
         } else {
           pushNotification.register(

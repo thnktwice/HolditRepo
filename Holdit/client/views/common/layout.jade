@@ -1,0 +1,17 @@
+template(name="layout") 
+  header.container
+    .navbar.navbar-fixed-top
+      .container-fluid
+        .navbar-header
+          a.navbar-brand(href="#") H!
+          //- .row
+          //-   .col-xs-2.left-button Left
+          //-   .col-xs-8.title-box Titlee
+          //-   .col-xs-2.title-box Right
+  article.container
+    +yield
+
+  footer.container
+    hr
+    +yield("footer")
+

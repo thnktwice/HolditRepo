@@ -57,6 +57,7 @@ minimongo@1.0.5
 mobile-status-bar@1.0.1
 mongo-livedata@1.0.6
 mongo@1.0.8
+mquandalle:jade@0.2.9
 mrt:accounts-ui-bootstrap-3@0.3.3
 mrt:moment@2.8.1
 npm-bcrypt@0.7.7

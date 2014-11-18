@@ -1,0 +1,30 @@
+template(name="stats")
+  +contentFor("footer")
+    .container
+      .row
+        .col-xs-4 
+        .col-xs-4
+          +loginButtons
+
+  #main-stats.container
+    h6.graph-title Some Graphical stats
+    .row
+      .col-xs-4 Graph 1
+      .col-xs-4 Graph 2 
+      .col-xs-4 Graph 3
+  br
+
+  #target-goals.container
+    h6.goals-title Some Target goals
+    .row
+      .col-xs-4 Goal 1
+      .col-xs-4 Goal 2
+      .col-xs-4 Goal 3
+  br
+  
+  #achievements.container
+    h6.achievements-title Some Badges or achievements
+    .row
+      .col-xs-4 Achievement 1
+      .col-xs-4 Achievement 2
+      .col-xs-4 Achievement 3

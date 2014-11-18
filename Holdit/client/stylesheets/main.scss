@@ -5,20 +5,13 @@
 @import ".meteor/local/build/programs/server/assets/packages/reywood_bootstrap3-sass/bootstrap";
 
 // @import ".meteor/local/build/programs/server/assets/packages/richsilv:semantic-ui-sass/assets/stylesheets/semantic-ui";
+
 //General style integration
 @import "client/stylesheets/_global";
 
 //All the others sheets for each views...
 @import "client/views/common/_layout";
 
-@import "client/views/topicsBoard/_topicsBoard";
 
-@import "client/views/topic/_topic";
-
-@import "client/views/topicCreation/_topicCreation";
-
-@import "client/views/topicTimeline/_topicTimeline";
-
-@import "client/views/topicStats/_topicStats";
 
 

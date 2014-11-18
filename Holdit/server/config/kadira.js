@@ -1,1 +1,2 @@
-Kadira.connect('t5j4iRGjoT67r9dyc', '8b885bcb-4afa-407b-bc4b-be2e19382d6c');
+//We connect to Kadira for performance improvement
+Kadira.connect('nexcH8qj7x22zXSyx', 'e6557518-a4db-42da-ad01-22b7b2e3ab01');
