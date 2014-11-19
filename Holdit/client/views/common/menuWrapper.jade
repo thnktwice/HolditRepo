@@ -1,0 +1,13 @@
+//- This is a not very good solution for our navbar, but anyway
+template(name="menuWrapper") 
+  header.container
+    .navbar.navbar-fixed-top(role="navigation")
+      .navbar-inner
+        .container
+          .row.menu
+            .col-xs-3
+              .left-button {{this.left}}
+            .col-xs-6
+              .title {{this.title}}
+            .col-xs-3
+              .right-button {{this.right}}

@@ -1,0 +1,29 @@
+/*Navigation Bar*/
+$menu-font-size: 20px
+
+.navbar
+  background: $primary-color;
+  height: $navbar-size;
+  color: $ternary-color;
+
+.navbar-inner
+  padding-top: ($navbar-size - $menu-font-size)/2.4
+  //This is because it is hard to center a div in css
+
+.menu-item
+  text-align: center
+  vertical-align: middle
+  font-size: $menu-font-size
+  font-weight: 100
+
+.menu
+  .title
+    @extend .menu-item
+    font-weight: 100
+  .left-button
+    @extend .menu-item
+  .right-button
+    @extend .menu-item
+
+footer
+  text-align: center

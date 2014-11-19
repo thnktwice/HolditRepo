@@ -1,0 +1,47 @@
+template(name="timeline")
+
+  //- This calls the menu template
+  +menuWrapper(title="Time Line!" right=">" left="<")
+
+  +contentFor("footer")
+    .container
+      +loginButtons
+
+  #latest-posts.container
+    h6.graph-title Some Posts !
+    .row
+      .col-xs-3.padding-0
+        img.picture(src="http://thecatapi.com/api/images/get?format=src&type=gif")
+      .col-xs-9.padding-0
+        .container
+          .row
+            .col-xs-4.padding-0 m.coenca
+            .col-xs-4.padding-0 "Cat Mentoring"
+            .col-xs-4.padding-0 12/07/2015
+          .row
+            .col-xs-12.padding-0 Actual real useful content in all this
+    br    
+    .row
+      .col-xs-3.padding-0
+        img.picture(src="http://thecatapi.com/api/images/get?format=src&type=png")
+      .col-xs-9.padding-0
+        .container
+          .row
+            .col-xs-4.padding-0 d.baruchel
+            .col-xs-4.padding-0 "Serious Advice"
+            .col-xs-4.padding-0 14/07/2015
+          .row
+            .col-xs-12.padding-0 MAEOOWWWWWOOOWW
+    br    
+    .row
+      .col-xs-3.padding-0
+        img.picture(src="http://thecatapi.com/api/images/get?format=src&type=jpg")
+      .col-xs-9.padding-0
+        .container
+          .row
+            .col-xs-4.padding-0 t.bazeille
+            .col-xs-4.padding-0 "Pirate Coach"
+            .col-xs-4.padding-0 14/07/2015
+          .row
+            .col-xs-12.padding-0 Ahoy! I be thomas Bazeille and i be a pirate
+    br

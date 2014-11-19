@@ -1,10 +1,11 @@
 template(name="stats")
+
+  //- This calls the menu template
+  +menuWrapper(title="Hold it!" right=">" left="<")
+
   +contentFor("footer")
     .container
-      .row
-        .col-xs-4 
-        .col-xs-4
-          +loginButtons
+      +loginButtons
 
   #main-stats.container
     h6.graph-title Some Graphical stats

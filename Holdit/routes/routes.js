@@ -1,10 +1,13 @@
 Router.map(function() {
   this.route('login', {
-    
   });
 
   this.route('stats',{
-    path: '/',
+    path: ['/','/stats']
+  });  
+
+  this.route('timeline',{
+    path: '/timeline',
   });
   // //This will render the topics board template
   // this.route('topicsBoard', {
